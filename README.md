@@ -35,8 +35,8 @@ Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HA
 |0900 - 0930 |    Recap |
 |0930 - 1030 |    Virtual machine installation |
 |1030 - 1100 |    Coffee break|
-|1100 - 1300 |    Introduction to linux |
-|1100 - 1300 |    Navigating the linux directory structure - Hands-on |
+|1100 - 1200 |    [Introduction to the unix shell](https://cambiotraining.github.io/unix-shell/materials/01-basics/01-unix_overview.html) |
+|1200 - 1300 |    [Working with files and folders](https://cambiotraining.github.io/unix-shell/materials/01-basics/02-files_directories.html) |
 |1300 - 1400 |    Lunch |
 |1400 - 1430 |    Workflow for metagenomics data analysis |
 |1430 - 1500 |    QC, Adapter and quality trimming |
