@@ -87,4 +87,4 @@ Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HA
 |1030 - 1100 |    Coffee break|
 |1100 - 1300 |    Presentations, group II & III |
 |1300 - 1400 |    Lunch |
-|1400 - 1600 |    Participants Feedback, Closing Remarks, Certificate Presentation |
+|1400 - 1430 |    Participants Feedback, Closing Remarks, Certificate Presentation |
