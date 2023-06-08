@@ -1,5 +1,7 @@
 ## **Pathogen Genomics Training Workshop**
 
+This training is aimed at providing the utility of metagenomic sequencing in pathogen detection. 
+Participants will have hands-on experience with the wet lab experiments as well as bioinformatics analysis of metagenomics data for pathogen detection. Refer to the training schedule below for details. 
 
 Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HAy6LmtiWyTXAA/edit).
 
@@ -7,7 +9,7 @@ Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HA
 
 ## **Training Schedule**
 
-### **Day 1: Introduction to Metagenomics Next Generation Sequencing**
+### **Day 1: Introduction to metagenomics sequencing for pathogen detection**
 
 **Instructor(s):** 
 
@@ -58,3 +60,31 @@ Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HA
 |1400 - 1600 |    Lab practical (Group II) |
 |1600 - 1630 |    Coffee Break |
 |1630 - 1700 |    Boat ride  |
+
+### **Day 4: Working with Metagenomics: Part III**
+
+**Instructor(s):** 
+
+| Time  | Session |
+| ------------- | ------------- |
+|0900 - 0930 |    Recap |
+|0930 - 1030 |    Lab results: Review of sequencing run parameters |
+|1030 - 1100 |    Coffee break|
+|1100 - 1300 |    Online platforms for analysis of metagenomics: Genome detective, Edge bioinformatics |
+|1300 - 1400 |    Lunch |
+|1400 - 1600 |    Illumina Dragen metagenomics pipelines |
+|1600 - 1630 |    Coffee Break |
+|1630 - 1700 |    UVRI-Metagenomics pipeline  |
+
+### **Day 5: Group discussions and closing session**
+
+**Instructor(s):** 
+
+| Time  | Session |
+| ------------- | ------------- |
+|0900 - 0930 |    Recap |
+|0930 - 1030 |    Presentations, group I |
+|1030 - 1100 |    Coffee break|
+|1100 - 1300 |    Presentations, group II & III |
+|1300 - 1400 |    Lunch |
+|1400 - 1600 |    Participants Feedback, Closing Remarks, Certificate Presentation |
