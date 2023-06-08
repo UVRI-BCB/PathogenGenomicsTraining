@@ -70,7 +70,7 @@ Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HA
 |0900 - 0930 |    Recap |
 |0930 - 1030 |    Lab results: Review of sequencing run parameters |
 |1030 - 1100 |    Coffee break|
-|1100 - 1300 |    Online platforms for analysis of metagenomics: Genome detective, Edge bioinformatics |
+|1100 - 1300 |    Online platforms for analysis of metagenomics |
 |1300 - 1400 |    Lunch |
 |1400 - 1600 |    Illumina Dragen metagenomics pipelines |
 |1600 - 1630 |    Coffee Break |
