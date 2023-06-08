@@ -3,7 +3,7 @@
 This training is aimed at providing the utility of metagenomic sequencing in pathogen detection. 
 Participants will have hands-on experience with the wet lab experiments as well as bioinformatics analysis of metagenomics data for pathogen detection. Refer to the training schedule below for details. 
 
-Register [here](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HAy6LmtiWyTXAA/edit).
+Participant registration: All particpants are required to complete the registration form at this [link](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HAy6LmtiWyTXAA/edit).
 
 **Contact:** Please email [nicholas.bbosa@mrcuganda.org](nicholas.bbosa@mrcuganda.org) for more information.
 
