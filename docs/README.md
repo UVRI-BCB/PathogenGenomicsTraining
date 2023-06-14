@@ -38,7 +38,7 @@ Participants will have hands-on experience with the wet lab experiments as well 
 |1100 - 1200 |    [Introduction to the unix shell](https://cambiotraining.github.io/unix-shell/materials/01-basics/01-unix_overview.html) |
 |1200 - 1300 |    [Working with files and folders](https://cambiotraining.github.io/unix-shell/materials/01-basics/02-files_directories.html) |
 |1300 - 1400 |    Lunch |
-|1400 - 1430 |    Workflow for metagenomics data analysis |
+|1400 - 1430 |    [Workflow for metagenomics data analysis](https://alfredug.github.io/PathogenGenomics2023/PathogenGenomics2023.html) |
 |1430 - 1500 |    QC, Adapter and quality trimming |
 |1500 - 1530 |    Coffee Break |
 |1530 - 1630 |    Mapping metagenomic reads to reference genomes |
