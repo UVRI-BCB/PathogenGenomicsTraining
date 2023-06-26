@@ -41,7 +41,17 @@ At this point, we use `scp` to download the MultiQC report and have a look at it
 ```
 scp acountname@xxx.xx.xxx.xx:/home/accountname/analysis/qc/multiqc_report.html .
 ```
+
 For participants using Mobaxterm, we could simply download, by navigating to the `qc` directory in the left panel of mobaxterm window and downloading the MultiQC report to a desired folder on own computer. 
+
+We use `trim_galore` for adaptor and quality trimming. Below is an example, the cut-offs on quality scores, length, e.t.c indicated below are arbitrary. In practice, the choice of these parameters guided by the assessment made on the QC plots generated above.
+
+```
+mkdir trimmed
+trim_galore -q 30 --paired data/sample1_R1.fq data/sample1_R2.fq -o trimmed
+```
+
+In this case, we may not have to quality trim our data, but just in case we did, we would used the trimmed data from this point onwards.
 
 ### Read-based taxonomic identification using Kraken2
 
