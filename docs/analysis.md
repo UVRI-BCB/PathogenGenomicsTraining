@@ -1,5 +1,20 @@
 ## Basic analysis commands
 
+### Analysis tools
+
+```
+fastqc
+bowtie2
+samtools
+bcftools
+tablet
+seqtk
+seqkit
+kraken2
+KrakenTools
+krona
+```
+
 ### Obtain the dataset from ENA
 
 ```
