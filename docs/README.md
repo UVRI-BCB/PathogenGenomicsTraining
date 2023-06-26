@@ -27,7 +27,7 @@ Participants will have hands-on experience with the wet lab experiments as well 
 |1600 - 1700 |    Molecular Biology for Bioinformatics |
 |1730 - 1900 |    Dinner - Transport to be provided from UVRI and back |
 
-### **Day 2: Working with Metagenomics: Part I**
+### **Day 2: Bioinformatics analysis of metagenomics data - part I**
 
 **Instructor(s):** Alfred Ssekagiri, Stella Nabirye, Ronald Kiiza
 
@@ -45,7 +45,7 @@ Participants will have hands-on experience with the wet lab experiments as well 
 |1600 - 1700 |    Generating consensus sequences from alignment maps, Removing host reads from metagenomic sequence data, De novo assembly of metagenomic reads, Inspecting contigs from de novo assembly of metagenomes |
 |1730 - 1900 |    End of day |
 
-### **Day 3: Working with Metagenomics: Part II**
+### **Day 3: Metagenomic Next Generation Sequencing**
 
 **Instructor(s):** Hamidah Namagembe, Stella Nabirye, Ronald Kiiza
 
@@ -63,7 +63,7 @@ Participants will have hands-on experience with the wet lab experiments as well 
 |1600 - 1700 |    Laboratory practical (VSP panel) |
 |1730 - 1900 |    End of day |
 
-### **Day 4: Working with Metagenomics: Part III**
+### **Day 4:  Bioinformatics analysis of metagenomics data - part II**
 
 **Instructor(s):** Hamidah Namagembe, Stella Nabirye, Ronald Kiiza, Alfred Ssekagiri, Dr. Nicholas Bbosa
 
