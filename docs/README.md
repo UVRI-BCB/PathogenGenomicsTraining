@@ -11,20 +11,21 @@ Participants will have hands-on experience with the wet lab experiments as well 
 
 ### **Day 1: Introduction to metagenomics sequencing for pathogen detection**
 
-**Instructor(s):** 
+**Instructor(s):** Dr. Nicholas Bbosa, Mr. John Kayiwa, Dr Bernard Bagaya
 
 | Time  | Session |
 | ------------- | ------------- |
-|0900 - 1000 |    Arrival & Registration |
-|1000 - 1030 |    Opening remarks |
-|1030 - 1100 |    Coffee break|
-|1100 - 1300 |    Molecular Biology for Bioinformatics |
-|1300 - 1400 |    Lunch |
-|1400 - 1430 |    Introduction to metagenomics |
-|1430 - 1500 |    Applications of metagenomics and NGS file formats|
-|1500 - 1530 |    Coffee Break |
-|1530 - 1630 |    Next Generation Sequencing  |
-|1630 - 1700 |    Recap  |
+|0930 - 1000 |    Arrival & Registration - All|
+|1000 - 1030 |    Welcome and opening remarks, introduction (name and institution), Group photo |
+|1030 - 1100 |    **Tea break** |
+|1100 - 1130 |    Self introductions (Background and research interests) |
+|1130 - 1230 |    Next Generation Sequencing |
+|1230 - 1400 |    **Lunch** |
+|1400 - 1500 |    Introduction to metagenomics |
+|1500 - 1530 |    Applications of metagenomics and NGS file formats |
+|1530 - 1600 |    **Tea break** |
+|1600 - 1700 |    Molecular Biology for Bioinformatics |
+|1630 - 1700 |    Dinner - Transport to be provided from UVRI and back |
 
 ### **Day 2: Working with Metagenomics: Part I**
 
