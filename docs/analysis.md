@@ -70,21 +70,26 @@ tanoti -r data/sars-cov-2.fasta -i data/SRR19400485_1.fastq data/SRR19400485_2.f
 SAM_STATS FinalAssembly.sam
 ```
 
+To keep order in our working directory, let us create a mapping directiry add the alignment map to it and change it name to reflect the sample ID. 
+
+```
+mkdir mapping
+mv FinalAssembly.sam mapping/SRR19400485.sam
+```
+
 Convert `.sam` file to `.bam` format, sort it, and generate a consensus sequence from the alignment map.
 
 ```
-samtools view -b SRR19400485.sam > SRR19400485.bam
-samtools sort  SRR19400485.bam -o SRR19400485_sorted.bam
-bcftools mpileup -f sars-cov-2.fasta SRR19400485_sorted.bam | bcftools call -c | vcfutils.pl vcf2fq > SRR19400485.fastq
-seqtk seq -a SRR19400485.fastq > SRR19400485.fasta
-seqkit seq SRR19400485.fasta --upper-case > SRR19400485_cns.fasta
+samtools view -b mapping/SRR19400485.sam > mapping/SRR19400485.bam
+samtools sort  mapping/SRR19400485.bam -o mapping/SRR19400485_sorted.bam
+bcftools mpileup -f data/sars-cov-2.fasta mapping/SRR19400485_sorted.bam | bcftools call -c | vcfutils.pl vcf2fq > mapping/SRR19400485.fastq
+seqtk seq -a mapping/SRR19400485.fastq > mapping/SRR19400485.fasta
+seqkit seq mapping/SRR19400485.fasta --upper-case > mapping/SRR19400485_cns.fasta
 ```
-
-
-### Extract mapped reads and do a de novo assembly on them
+ 
+Extract reads that mapped onto the SARS-CoV-2 reference genome
 
 ```
-mkdir denovo
-samtools view -F 4 SRR19400485_sorted.bam > SRR19400485_mapped.bam
-awk '{OFS="\t";  print ">"$1"\n"$10}' SRR19400485_mapped.bam > SRR19400485_mapped.fasta
+samtools view -F 4 mapping/SRR19400485_sorted.bam > mapping/SRR19400485_mapped.bam
+awk '{OFS="\t";  print ">"$1"\n"$10}' mapping/SRR19400485_mapped.bam > mapping/SRR19400485_mapped.fasta
 ```
