@@ -83,6 +83,16 @@ Participants will have hands-on experience with the wet lab experiments as well 
 
 ### **Day 5: Group discussions and closing session**
 
-**Instructor(s):** 
+**Instructor(s):** Dr. Deogratius Ssemwanga, Dr. Nicholas Bbosa
+
+| Time  | Session |
+| ------------- | ------------- |
+|0930 - 1000 |    Recap |
+|1000 - 1030 |    **Tea break** |
+|1030 - 1100 |    Group discussions and presentations |
+|1100 - 1130 |    Group discussions and presentations |
+|1130 - 1230 |    Closing Ceremony, Participants Feedback, Closing Remarks, Certificate Presentation |
+|1230 - 1400 |    **Lunch** |
+|1400 - 1900 |    End of day |
 
 
