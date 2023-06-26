@@ -77,14 +77,9 @@ mkdir mapping
 mv FinalAssembly.sam mapping/SRR19400485.sam
 ```
 
-Convert `.sam` file to `.bam` format, sort it, and generate a consensus sequence from the alignment map.
-
+Generate a consensus sequence from the alignment map
 ```
-samtools view -b mapping/SRR19400485.sam > mapping/SRR19400485.bam
-samtools sort  mapping/SRR19400485.bam -o mapping/SRR19400485_sorted.bam
-bcftools mpileup -f data/sars-cov-2.fasta mapping/SRR19400485_sorted.bam | bcftools call -c | vcfutils.pl vcf2fq > mapping/SRR19400485.fastq
-seqtk seq -a mapping/SRR19400485.fastq > mapping/SRR19400485.fasta
-seqkit seq mapping/SRR19400485.fasta --upper-case > mapping/SRR19400485_cns.fasta
+SAM2CONSENSUS -i mapping/SRR19400485.sam -o mapping/SRR19400485-SARS-CoV-2.fasta
 ```
  
 Extract reads that mapped onto the SARS-CoV-2 reference genome
