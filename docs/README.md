@@ -1,6 +1,6 @@
 ## **Pathogen Genomics Training Workshop**
 
-This training is aimed at providing the utility of metagenomic sequencing in pathogen detection. 
+This training is aimed at providing the utility of metagenomic sequencing in pathogen detection (focusing on viral pathogens). 
 Participants will have hands-on experience with the wet lab experiments as well as bioinformatics analysis of metagenomics data for pathogen detection. Refer to the training schedule below for details. 
 
 **Participant registration:** All particpants are required to complete the registration form at this [link](https://docs.google.com/forms/d/1x4La0OaNaTgOCK6cj2FXeNSSdEa5-HAy6LmtiWyTXAA/edit).
