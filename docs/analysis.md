@@ -9,7 +9,7 @@
 + Mapping reads onto reference genomes: `tanoti`
 + Visualising alignments: `tablet`
 
-### Creating the analysis directroy
+### Creating the analysis directory
 
 We create a directory `analysis`, which will be our working space for this session. We use the famous `mkdir` command to achive this. Later, we shall be creating subdirectories inside the `analysis` directory for the different steps, includin; qc, mapping, e.t.c.
 
@@ -18,7 +18,7 @@ mkdir analysis
 cd analysis
 ```
 
-### Obtain the dataset from ENA
+### The practice dataset
 
 In interest of time, the data was downloaded from ENA ahead of time and stored on the server. Use the command below to create a copy of the data in your working directory.
 
@@ -77,9 +77,3 @@ Generate a consensus sequence from the alignment map
 SAM2CONSENSUS -i mapping/SRR19400485.sam -o mapping/SRR19400485-SARS-CoV-2.fasta
 ```
  
-### Removing Host reads
-
-### De novo assembly
-
-### Contig-based taxonomic identification using Kraken2/Diamond
-
