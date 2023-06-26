@@ -2,18 +2,12 @@
 
 ### Analysis tools
 
-```
-fastqc
-tanoti
-samtools
-bcftools
-tablet
-seqtk
-seqkit
-kraken2
-KrakenTools
-krona
-```
++ Quality control: `fastqc` and `multiqc`
++ Read-based tanonomic identification: `kraken2` 
++ Processing kraken results: `KrakenTools`
++ Visualising Kraken results: `krona`
++ Mapping reads onto reference genomes: `tanoti`
++ Visualising alignments: `tablet`
 
 ### Creating the analysis directroy
 
@@ -21,6 +15,7 @@ We create a directory `analysis`, which will be our working space for this sessi
 
 ```
 mkdir analysis
+cd analysis
 ```
 
 ### Obtain the dataset from ENA
@@ -82,9 +77,9 @@ Generate a consensus sequence from the alignment map
 SAM2CONSENSUS -i mapping/SRR19400485.sam -o mapping/SRR19400485-SARS-CoV-2.fasta
 ```
  
-Extract reads that mapped onto the SARS-CoV-2 reference genome
+### Removing Host reads
 
-```
-samtools view -F 4 mapping/SRR19400485_sorted.bam > mapping/SRR19400485_mapped.bam
-awk '{OFS="\t";  print ">"$1"\n"$10}' mapping/SRR19400485_mapped.bam > mapping/SRR19400485_mapped.fasta
-```
+### De novo assembly
+
+### Contig-based taxonomic identification using Kraken2/Diamond
+
