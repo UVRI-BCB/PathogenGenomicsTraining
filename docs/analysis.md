@@ -105,5 +105,5 @@ Assemble the short reads into longer contigs using `spades`.
 
 ```
 mkdir spades_output
-metaspades.py -1 sample1_R1.fq -2 sample1_R2.fq -o spades_output
+metaspades.py -1 data/SRR19400485_1.fastq  -2 data/SRR19400485_2.fastq  -o spades_output
 ```
