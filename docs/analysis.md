@@ -68,14 +68,14 @@ ktImportText kraken/SRR19400485.krona  -o kraken/SRR19400485.html
 
 ### Mapping mNGS onto reference genomes
 
-Map the short reads onto the reference generate, and obtain mapping statistics
+Map the short reads onto the reference genome, and obtain mapping statistics
 
 ```
 tanoti -r data/sars-cov-2.fasta -i data/SRR19400485_1.fastq data/SRR19400485_2.fastq -p 1
 SAM_STATS FinalAssembly.sam
 ```
 
-To keep order in our working directory, let us create a mapping directiry add the alignment map to it and change it name to reflect the sample ID. 
+To keep order in our working directory, let us create a mapping directory add the alignment map to it and change it name to reflect the sample ID. 
 
 ```
 mkdir mapping
