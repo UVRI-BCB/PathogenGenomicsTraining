@@ -61,9 +61,9 @@ cp -r /opt/metagenome/kraken krakenDB
 
 mkdir kraken
 
-kraken2 --db krakenDB --paired data/SRR19400485_1.fastq data/SRR19400485_2.fastq --report kraken/SRR19400485.report > kraken/SRR19400485.txt
-python KrakenTools/kreport2krona.py -r kraken/SRR19400485.report -o kraken/SRR19400485.krona 
-ktImportText kraken/SRR19400485.krona  -o kraken/SRR19400485.html
+kraken2 --db krakenDB --paired data/SRR19400485_1.fastq data/SRR19400485_2.fastq --report kraken-output/SRR19400485.report > kraken-output/SRR19400485.txt
+python KrakenTools/kreport2krona.py -r kraken-output/SRR19400485.report -o kraken-output/SRR19400485.krona 
+ktImportText kraken-output/SRR19400485.krona  -o kraken-output/SRR19400485.html
 ```
 
 ### Mapping mNGS onto reference genomes
@@ -94,11 +94,11 @@ This section comprises of four main stages; removing host reads from the read da
 
 #### Removal of host reads 
 
-Prior to performing de novo assembly, we remove the host reads from the data. Here we use bowtie2 to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The chimpanzee reference genome can be downloaded from Ensembl.
+Prior to performing de novo assembly, we remove the host reads from the data. Here we use bowtie2 to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The Human reference genome can be downloaded from Ensembl, we have added a bowtie2-indexes of the Human genome to the server.
 
 ```
 mkdir hosttfree
-bowtie2 -x /opt/metagenome/human/GRCH39 -1 data/SRR19400485_1.fastq -2 data/SRR19400485_2.fastq --un-conc-gz hosttfree/SRR19400485_clean > hosttfree/SRR19400485_host.sam
+bowtie2 -x /opt/metagenome/GRCh38_noalt_as/GRCh38_noalt_as -1 data/SRR19400485_1.fastq -2 data/SRR19400485_2.fastq --un-conc-gz hosttfree/SRR19400485_clean > hosttfree/SRR19400485_host.sam &
 ```
 
 Assemble the short reads into longer contigs using `spades`.
