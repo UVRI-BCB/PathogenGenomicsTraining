@@ -99,11 +99,17 @@ Prior to performing de novo assembly, we remove the host reads from the data. He
 ```
 mkdir hosttfree
 bowtie2 -x /opt/metagenome/GRCh38_noalt_as/GRCh38_noalt_as -1 data/SRR19400485_1.fastq -2 data/SRR19400485_2.fastq --un-conc-gz hosttfree/SRR19400485_clean > hosttfree/SRR19400485_host.sam &
+
+mv hosttfree/SRR19400485_clean.1 hosttfree/SRR19400485_clean_1.gz
+mv hosttfree/SRR19400485_clean.2 hosttfree/SRR19400485_clean_2.gz
+gunzip hosttfree/*.gz
 ```
 
 Assemble the short reads into longer contigs using `spades`.
 
 ```
 mkdir spades_output
-metaspades.py -1 data/SRR19400485_1.fastq  -2 data/SRR19400485_2.fastq  -o spades_output
+metaspades.py -1 hosttfree/SRR19400485_clean_2.fastq  -2 hosttfree/SRR19400485_clean_2.fastq  -o spades_output
 ```
+
+
