@@ -90,11 +90,11 @@ SAM2CONSENSUS -i mapping/SRR19400485.sam -o mapping/SRR19400485-SARS-CoV-2.fasta
 
 ### De novo assembly
 
-This section comprises of four main stages; removing host reads from the read data, assembling short reads into longer contiguous sequences using two different assemblers; spades and megahit, merging contigs constructed by the two assemblers, blasting the merged contigs using diamond and mapping reads to detected adenovirus sequences as reference genomes.
+This section comprises of three main stages; removing host reads from the read data, assembling short reads into longer contiguous sequences using a metagenome assembler, spades in this case and blasting the contigs against a protein database using `diamond`.
 
 #### Removal of host reads 
 
-Prior to performing de novo assembly, we remove the host reads from the data. Here we use bowtie2 to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The Human reference genome can be downloaded from Ensembl, we have added a bowtie2-indexes of the Human genome to the server.
+Prior to performing de novo assembly, we remove the host reads from the data. Here we use `bowtie2` to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The Human reference genome can be downloaded from Ensembl, we have added a bowtie2-indexes of the Human genome to the server.
 
 ```
 mkdir hosttfree
