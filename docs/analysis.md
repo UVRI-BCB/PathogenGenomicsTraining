@@ -83,7 +83,27 @@ mv FinalAssembly.sam mapping/SRR19400485.sam
 ```
 
 Generate a consensus sequence from the alignment map
+
 ```
 SAM2CONSENSUS -i mapping/SRR19400485.sam -o mapping/SRR19400485-SARS-CoV-2.fasta
 ```
- 
+
+### De novo assembly
+
+This section comprises of four main stages; removing host reads from the read data, assembling short reads into longer contiguous sequences using two different assemblers; spades and megahit, merging contigs constructed by the two assemblers, blasting the merged contigs using diamond and mapping reads to detected adenovirus sequences as reference genomes.
+
+#### Removal of host reads 
+
+Prior to performing de novo assembly, we remove the host reads from the data. Here we use bowtie2 to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The chimpanzee reference genome can be downloaded from Ensembl.
+
+```
+mkdir hosttfree
+bowtie2 -x /opt/metagenome/human/GRCH39 -1 data/SRR19400485_1.fastq -2 data/SRR19400485_2.fastq --un-conc-gz hosttfree/SRR19400485_clean > hosttfree/SRR19400485_host.sam
+```
+
+Assemble the short reads into longer contigs using `spades`.
+
+```
+mkdir spades_output
+metaspades.py -1 sample1_R1.fq -2 sample1_R2.fq -o spades_output
+```
