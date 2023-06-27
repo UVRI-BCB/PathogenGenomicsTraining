@@ -3,7 +3,7 @@
 ### Analysis tools
 
 + Quality control: `fastqc` and `multiqc`
-+ Read-based tanonomic identification: `kraken2` 
++ Read-based taxonomic identification: `kraken2` 
 + Processing kraken results: `KrakenTools`
 + Visualising Kraken results: `krona`
 + Mapping reads onto reference genomes: `tanoti`
