@@ -56,13 +56,25 @@ In this case, we may not have to quality trim our data, but just in case we did,
 
 ### Read-based taxonomic identification using Kraken2
 
+To get an idea of the viral pathogens that could be in this sample, we do screen the read data using `kraken2`. Basically, the taxonomic identification is done in comparison/reference to a kraken-compatible pre-built database. Since we are focusing on viral pathogens for this session, we use the kraken2 viral database. We have a copy of this databse on the server but you can download one [here](https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20230605.tar.gz).
+
+First, get a copy of the database and keep it in the `analysis` directory. 
+
+```
+cp -r /opt/metagenome/kraken krakenDB
+```
+
+Make a directory where we shall keep the kraken-results, call it `kraken-output` and run `kraken2` keeping the outputs in the directory created.
+
+```
+mkdir kraken-output
+kraken2 --db krakenDB --paired data/SRR19400485_1.fastq data/SRR19400485_2.fastq --report kraken-output/SRR19400485.report > kraken-output/SRR19400485.txt
+```
+
+To visualise `kraken2` results, we use `KronaTools`. But before that happens, we need to convert the `kraken2` report into a format compartible with `Kronatools`. We do that using `KrakenTools` So, we start by getting a copy of the KrakneTools into the analysis directory and then convert the `kraken2` report into an equivalent report that is compartible to `KronaTools`.
+
 ```
 cp -r /opt/metagenome/KrakenTools .
-cp -r /opt/metagenome/kraken krakenDB
-
-mkdir kraken-output
-
-kraken2 --db krakenDB --paired data/SRR19400485_1.fastq data/SRR19400485_2.fastq --report kraken-output/SRR19400485.report > kraken-output/SRR19400485.txt
 python KrakenTools/kreport2krona.py -r kraken-output/SRR19400485.report -o kraken-output/SRR19400485.krona 
 ktImportText kraken-output/SRR19400485.krona  -o kraken-output/SRR19400485.html
 ```
