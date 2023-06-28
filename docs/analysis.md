@@ -71,12 +71,18 @@ mkdir kraken-output
 kraken2 --db krakenDB --paired data/SRR19400485_1.fastq data/SRR19400485_2.fastq --report kraken-output/SRR19400485.report > kraken-output/SRR19400485.txt
 ```
 
-To visualise `kraken2` results, we use `KronaTools`. But before that happens, we need to convert the `kraken2` report into a format compartible with `Kronatools`. We do that using `KrakenTools` So, we start by getting a copy of the KrakneTools into the analysis directory and then convert the `kraken2` report into an equivalent report that is compartible to `KronaTools`.
+To visualise `kraken2` results, we use `KronaTools`. But before that happens, we need to convert the `kraken2` report into a format compartible to `Kronatools`. We do that using `KrakenTools`. So, we start by getting a copy of the KrakenTools into the analysis directory and then convert the `kraken2` report into an equivalent report that is compartible to `KronaTools`.
 
 ```
 cp -r /opt/metagenome/KrakenTools .
 python KrakenTools/kreport2krona.py -r kraken-output/SRR19400485.report -o kraken-output/SRR19400485.krona 
-ktImportText kraken-output/SRR19400485.krona  -o kraken-output/SRR19400485.html
+ktImportText kraken-output/SRR19400485.krona  -o kraken-output/SRR19400485_krona.html
+```
+
+As we did for the `multiqc` report earlier on, let us use the `scp` command to download the `KronaTools` report and have a inspect it. At this point, we should be able to answer the question, **which known  viral pathogens could be in this sample?** 
+
+```
+scp acountname@xxx.xx.xxx.xx:/home/accountname/analysis/kraken-output/SRR19400485_krona.html .
 ```
 
 ### Mapping mNGS onto reference genomes
