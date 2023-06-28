@@ -12,7 +12,7 @@
 
 ### Creating the analysis directory
 
-We create a directory `analysis`, which will be our working space for this session. We use the famous `mkdir` command to achive this. Later, we shall be creating subdirectories inside the `analysis` directory for the different steps, includin; qc, mapping, e.t.c.
+We create a directory `analysis`, which will be our working space for this session. We use the famous `mkdir` command to achive this. Later, we shall be creating subdirectories inside the `analysis` directory for the different steps, including; qc, mapping, e.t.c.
 
 ```
 mkdir analysis
@@ -95,7 +95,7 @@ This section comprises of three main stages; removing host reads from the read d
 
 #### Removal of host reads 
 
-Prior to performing de novo assembly, we remove the host reads from the data. Here we use `bowtie2` to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The Human reference genome can be downloaded from Ensembl, we have added a bowtie2-indexes of the Human genome to the server.
+Prior to performing de novo assembly, we remove the host reads from the data. Here we use `bowtie2` to map reads to the host genome and retain the reads that do not map to the host genome for de novo assembly. The Human reference genome can be downloaded from Ensembl, we have added a bowtie2-index of the Human genome to the server, on the path `/opt/metagenome/GRCh38_noalt_as/GRCh38_noalt_as`.
 
 ```
 mkdir hosttfree
