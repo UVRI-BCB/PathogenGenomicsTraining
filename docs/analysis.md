@@ -79,7 +79,7 @@ python KrakenTools/kreport2krona.py -r kraken-output/SRR19400485.report -o krake
 ktImportText kraken-output/SRR19400485.krona  -o kraken-output/SRR19400485_krona.html
 ```
 
-As we did for the `multiqc` report earlier on, let us use the `scp` command to download the `KronaTools` report and have a inspect it. At this point, we should be able to answer the question, **which known  viral pathogens could be in this sample?** 
+As we did for the `multiqc` report earlier on, let us use the `scp` command to download the `KronaTools` report and inspect it. At this point, we should be able to answer the question, **which known  viral pathogens could be in this sample?** 
 
 ```
 scp acountname@xxx.xx.xxx.xx:/home/accountname/analysis/kraken-output/SRR19400485_krona.html .
