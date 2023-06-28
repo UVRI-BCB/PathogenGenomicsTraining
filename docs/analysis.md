@@ -8,6 +8,7 @@
 + Visualising Kraken results: `krona`
 + Mapping reads onto reference genomes: `tanoti`
 + Visualising alignments: `tablet`
++ De novo assembly: `spades`
 
 ### Creating the analysis directory
 
@@ -44,7 +45,7 @@ scp acountname@xxx.xx.xxx.xx:/home/accountname/analysis/qc/multiqc_report.html .
 
 For participants using Mobaxterm, we could simply download, by navigating to the `qc` directory in the left panel of mobaxterm window and downloading the MultiQC report to a desired folder on own computer. 
 
-We use `trim_galore` for adaptor and quality trimming. Below is an example, the cut-offs on quality scores, length, e.t.c indicated below are arbitrary. In practice, the choice of these parameters guided by the assessment made on the QC plots generated above.
+We use `trim_galore` for adaptor and quality trimming. Below is an example, the cut-offs on quality scores, length, e.t.c indicated below are arbitrary. In practice, the choice of these parameters is guided by the assessment made on the QC plots generated above.
 
 ```
 mkdir trimmed
@@ -59,7 +60,7 @@ In this case, we may not have to quality trim our data, but just in case we did,
 cp -r /opt/metagenome/KrakenTools .
 cp -r /opt/metagenome/kraken krakenDB
 
-mkdir kraken
+mkdir kraken-output
 
 kraken2 --db krakenDB --paired data/SRR19400485_1.fastq data/SRR19400485_2.fastq --report kraken-output/SRR19400485.report > kraken-output/SRR19400485.txt
 python KrakenTools/kreport2krona.py -r kraken-output/SRR19400485.report -o kraken-output/SRR19400485.krona 
